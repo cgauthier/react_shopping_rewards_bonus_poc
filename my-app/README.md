@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Purpose of Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The creation of a report which provides a list of transactions that are filtered by date range.
 
-## Available Scripts
+The end result is a table with the following fields:
 
-In the project directory, you can run:
+invoice date, invoice number, total $, total points
 
-### `npm start`
+This will be summarized by total $ and total points
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This PoC is coded in React.
+JSON-Server is used for CRUD operation.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Typically, this would be a report which is provided as part of a user's shopping app.
 
-### `npm test`
+# Requirements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A retailer offers a rewards program to its customers, awarding points based on each recorded purchase.
 
-### `npm run build`
+A customer receives:
+- 2 points for every dollar spent over $100 in each transaction, 
+- plus 1 point for every dollar spent between $50 and $100 in each transaction.
+(e.g. a $120 purchase = 2x$20 + 1x$50 = 90 points),
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Given a record of every transaction during a three month period, calculate the reward points earned for each customer per month and total.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Use React JS (do not use TypeScript)
+- Simulate an asynchronous API call to fetch data 
+- Make up a data set to best demonstrate your solution
+- Check solution into GitHub
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Points Rules (AS UNDERSTOOD)
+There are no points awarded for total transaction of less than $100.
+2 points per dollar is awarded for total transaction above $100.
+1 point per dollar is awarded for total transaction between $50 and $100.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Expected Output 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Monthly rewards points earned subtotal and a total for 3 months.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Installation and Configuration Instructions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## GitHub
+https://github.com/cgauthier/react_shopping_rewards_bonus_poc
 
-## Learn More
+# Development Tools & Setup
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Development OS: Windows 11 Professional
+## IDE: Visual Studio Code
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Node: v19.8.1
+## NPM: 9.8.1
+## Terminal: Git Bash
 
-### Code Splitting
+## React (core library)
+https://create-react-app.dev/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## json-server (for data storage/retrival)
+https://www.npmjs.com/package/json-server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Setup Steps
 
-### Making a Progressive Web App
+## Create a folder on your OS
+(e.g): c:\demo\
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Creating your app using create-react-app
+Using your terminal, run the following command:
 
-### Advanced Configuration
+npm create-react-app my-app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Expected Result: a my-app folder will be created
 
-### Deployment
+## Installing JSON-SERVER 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+JSON-SERVER will be used to serve data, it isn't part of a react build.  It is a separate application and instructions on setup and use are provided in this document.
 
-### `npm run build` fails to minify
+Install anywhere on your system.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm install -g json-server
+
+## Running the App
+
+### Start the JSON-SERVER
+
+Normally we should have separate files, but this is a demo, so we keep it simple.
+
+The URL in the app: "http://localhost:3001/db"
+Run JSON-SERVER from src/data in its own terminal window
+json-server --watch db.json --port 3001
+
+### Start the React App
+From the my-app directory: npm start
+
