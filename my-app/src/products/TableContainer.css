@@ -1,0 +1,16 @@
+.TableContainer {
+    border: 1px solid black;
+    font-size: 1.4em;
+    font-weight: bold;
+    flex: 1;
+    background-color: white;
+    margin: 0px;
+    padding: 20px;
+    overflow: auto;
+
+}
+
+.listItemsUlCls {
+    margin: 0px;
+    padding: 0px;
+}

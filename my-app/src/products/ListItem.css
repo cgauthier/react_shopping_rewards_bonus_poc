@@ -1,0 +1,23 @@
+.ListItem {
+    display: "block";
+    padding: 20px;
+    margin: 0px;
+    border-top: 1px solid black;
+}
+
+.listItemCls {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.listItemHeaderCls {
+    margin-bottom: 5px;
+}
+
+
+.itemsSummaryCls {
+    text-align: right;
+    width: 540px;
+    margin-top: 5px;
+}

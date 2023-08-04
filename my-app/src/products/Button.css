@@ -1,0 +1,28 @@
+.Button {
+    background-color: #666666;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: inline-block;
+    margin: 0px 0px 0px 5px;
+    padding: 0px;
+    
+    /* VS Code doesn't like this CSS directive
+       React compiles correctly. */
+    &:hover {
+        background-color: #000000;
+    }
+}
+
+.buttonCls {
+    background-color: #666666;
+    color: white;
+    border: 0px;
+    padding: 0px;
+    line-height: 0px;
+    font-size: 1em;
+    margin: 0px 10px;
+    cursor: pointer;
+
+}
+

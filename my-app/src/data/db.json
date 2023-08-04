@@ -1,0 +1,155 @@
+{
+    "db": {
+        "appConfig": {
+            "authentication": {
+                "username": "claude",
+                "password": "innova"
+            },
+            "title": "ACME STORE",
+            "rewards": {
+                "mainbonus": {
+                    "value": 100,
+                    "multiplier": 2
+                },
+                "addedbonus": {
+                    "value": 50,
+                    "multiplier": 1
+                }
+            }
+        },
+        "user": {
+            "name": "Claude",
+            "address": "33 North St,<br/>Jersey City, NJ<br/>09306"
+        },
+        "products": {
+            "invoices": [{
+                "date": "2023/07/31",
+                "invoiceNo": "11",
+                "items": [{
+                    "id": "02",
+                    "qty": 2
+                }, {
+                    "id": "01",
+                    "qty": 1
+                }]
+            }, {
+                "date": "2023/07/30",
+                "invoiceNo": "10",
+                "items": [{
+                    "id": "03",
+                    "qty": 1
+                }]
+            }, {
+                "date": "2023/06/15",
+                "invoiceNo": "09",
+                "items": [{
+                    "id": "04",
+                    "qty": 1
+                }]
+            }, {
+                "date": "2023/05/14",
+                "invoiceNo": "08",
+                "items": [{
+                    "id": "05",
+                    "qty": 1
+                }, {
+                    "id": "02",
+                    "qty": 2
+                }]
+            }, {
+                "date": "2023/05/11",
+                "invoiceNo": "07",
+                "items": [{
+                    "id": "06",
+                    "qty": 3
+                }]
+            }, {
+                "date": "2023/04/01",
+                "invoiceNo": "06",
+                "items": [{
+                    "id": "03",
+                    "qty": 1
+                }]
+            }, {
+                "date": "2023/03/11",
+                "invoiceNo": "05",
+                "items": [{
+                    "id": "01",
+                    "qty": 5
+                }, {
+                    "id": "03",
+                    "qty": 2
+                }]
+            }, {
+                "date": "2023/02/20",
+                "invoiceNo": "04",
+                "items": [{
+                    "id": "02",
+                    "qty": 1
+                }]
+            }, {
+                "date": "2023/01/31",
+                "invoiceNo": "03",
+                "items": [{
+                    "id": "01",
+                    "qty": 1
+                }, {
+                    "id": "02",
+                    "qty": 1
+                }]
+            }, {
+                "date": "2023/01/28",
+                "invoiceNo": "02",
+                "items": [{
+                    "id": "02",
+                    "qty": 1
+                }, {
+                    "id": "05",
+                    "qty": 1
+                }]
+            }, {
+                "date": "2023/01/28",
+                "invoiceNo": "01",
+                "items": [{
+                    "id": "01",
+                    "qty": 1
+                }, {
+                    "id": "05",
+                    "qty": 1
+                }]
+            }],
+            "list": [{
+                "id": "01",
+                "title": "TREBLAB X3 Pro",
+                "desc": "True Wireless Earbuds with Earhooks - 45H Battery Life",
+                "price": 60
+            }, {
+                "id": "02",
+                "title": "Anker Portable Charger",
+                "desc": "USB-C Power Bank 20000mAh with 20W Power Delivery",
+                "price": 42
+            }, {
+                "id": "03",
+                "title": "SAMSUNG SSD T7",
+                "desc": "Portable External Solid State Drive 1TB, Up to 1050MB/s, USB 3.2 Gen 2",
+                "price": 80
+            }, {
+                "id": "04",
+                "title": "ASUS ROG Strix G16 (2023) Gaming Laptop",
+                "desc": "16:10 FHD 165Hz, GeForce RTX 4070, Intel Core i9-13980HX, 16GB DDR5, 1TB PCIe SSD",
+                "price": 2140
+            }, {
+                "id": "05",
+                "title": "SABRENT 10 Port 60W USB 3.0 Hub",
+                "desc": "Individual Power Switches and LEDs Includes 60W 12V/5A Power Adapter (HB-BU10)",
+                "price": 54
+            }, {
+                "id": "06",
+                "title": "SAMSUNG 43 inch M70B Series 4K UHD USB-C Smart Monitor & Streaming TV",
+                "desc": "4ms, 60Hz, HDR10, Wireless Display, Gaming and IoT Hubs, Alexa Built-in, 2022, LS43BM702UNXZA, Black",
+                "price": 420
+            }]
+        }
+    }
+   
+}

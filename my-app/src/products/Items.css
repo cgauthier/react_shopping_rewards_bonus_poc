@@ -1,0 +1,39 @@
+.itemsTitleCls {
+    display: inline-block;
+    width: 250px;
+}
+.itemsQtyCls {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+
+}
+.itemsCostCls {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+
+
+.itemsTotalCls {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    
+}
+
+.itemsListCls {
+    margin: 0px;
+    list-style-type: none;
+}
+.itemsUlCls {
+    margin: 0px;
+    padding: 0px;
+}
+
+.itemTitleHeaderCls {
+    border-bottom: 1px solid black;
+    width: 540px;
+}
+
+
