@@ -93,3 +93,4 @@ json-server --watch db.json --port 3001
 ### Start the React App
 From the my-app directory: npm start
 
+Typical React URL: "http://localhost:3000"
